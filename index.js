@@ -53,6 +53,13 @@ export const burger = {
   price: 18,
   category: "Lunch",
   /*Your code here*/
+  discount: function (string) {
+    if (string === "teacher" || string === "student") {
+      return this.price * 0.75;
+    } else {
+      return this.price * 0.9;
+    }
+  },
 };
 
 ///////////////Reviews (MVP)///////////////////
